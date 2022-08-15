@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		A21E6E2B28AABA4000CEED98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E6E2A28AABA4000CEED98 /* AppDelegate.swift */; };
 		A21E6E2D28AABA4000CEED98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E6E2C28AABA4000CEED98 /* SceneDelegate.swift */; };
-		A21E6E2F28AABA4000CEED98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E6E2E28AABA4000CEED98 /* ViewController.swift */; };
+		A21E6E2F28AABA4000CEED98 /* SlotMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21E6E2E28AABA4000CEED98 /* SlotMachineViewController.swift */; };
 		A21E6E3228AABA4000CEED98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21E6E3028AABA4000CEED98 /* Main.storyboard */; };
 		A21E6E3428AABA4300CEED98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21E6E3328AABA4300CEED98 /* Assets.xcassets */; };
 		A21E6E3728AABA4300CEED98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21E6E3528AABA4300CEED98 /* LaunchScreen.storyboard */; };
+		A280F3F328AABD9E0068EDBE /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A280F3F228AABD9E0068EDBE /* CombineCocoa */; };
+		A280F3F528AABDE60068EDBE /* ExtesionSlotMachinePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A280F3F428AABDE60068EDBE /* ExtesionSlotMachinePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A21E6E2728AABA4000CEED98 /* GBSlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBSlotMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21E6E2A28AABA4000CEED98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A21E6E2C28AABA4000CEED98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A21E6E2E28AABA4000CEED98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A21E6E2E28AABA4000CEED98 /* SlotMachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineViewController.swift; sourceTree = "<group>"; };
 		A21E6E3128AABA4000CEED98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A21E6E3328AABA4300CEED98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A21E6E3628AABA4300CEED98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A21E6E3828AABA4300CEED98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A280F3F428AABDE60068EDBE /* ExtesionSlotMachinePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtesionSlotMachinePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A280F3F328AABD9E0068EDBE /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +62,8 @@
 			children = (
 				A21E6E2A28AABA4000CEED98 /* AppDelegate.swift */,
 				A21E6E2C28AABA4000CEED98 /* SceneDelegate.swift */,
-				A21E6E2E28AABA4000CEED98 /* ViewController.swift */,
+				A21E6E2E28AABA4000CEED98 /* SlotMachineViewController.swift */,
+				A280F3F428AABDE60068EDBE /* ExtesionSlotMachinePickerView.swift */,
 				A21E6E3028AABA4000CEED98 /* Main.storyboard */,
 				A21E6E3328AABA4300CEED98 /* Assets.xcassets */,
 				A21E6E3528AABA4300CEED98 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = GBSlotMachine;
+			packageProductDependencies = (
+				A280F3F228AABD9E0068EDBE /* CombineCocoa */,
+			);
 			productName = GBSlotMachine;
 			productReference = A21E6E2728AABA4000CEED98 /* GBSlotMachine.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = A21E6E1E28AABA4000CEED98;
+			packageReferences = (
+				A280F3F128AABD9E0068EDBE /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
 			productRefGroup = A21E6E2828AABA4000CEED98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21E6E2F28AABA4000CEED98 /* ViewController.swift in Sources */,
+				A21E6E2F28AABA4000CEED98 /* SlotMachineViewController.swift in Sources */,
+				A280F3F528AABDE60068EDBE /* ExtesionSlotMachinePickerView.swift in Sources */,
 				A21E6E2B28AABA4000CEED98 /* AppDelegate.swift in Sources */,
 				A21E6E2D28AABA4000CEED98 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A280F3F128AABD9E0068EDBE /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A280F3F228AABD9E0068EDBE /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A280F3F128AABD9E0068EDBE /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A21E6E1F28AABA4000CEED98 /* Project object */;
 }
